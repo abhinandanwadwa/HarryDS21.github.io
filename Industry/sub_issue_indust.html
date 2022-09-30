@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Submit an Issue</title>
+    
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Thapar Industry</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Check History</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-fluid" src="logo.png" alt="avatar" width="30" height="30">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#">Change Password</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      
+      
+      <div class="container mt-5" >
+        <h1>Submit issue</h1>
+      </div>
+     
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg">
+            <div class="container mt-3 col-lg">
+              <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque obcaecati fugit, sit dignissimos omnis, asperiores ratione similique aspernatur in tempora cupiditate veniam quia enim est, culpa porro optio officia. Optio laboriosam eum quibusdam quis maxime vero expedita laudantium enim quasi! Dolores soluta assumenda sequi ipsum vero ipsam nostrum similique sed?</p> -->
+              <form action="#" name="issue_form" method="post" >
+                  <div class="mb-3 mt-3">
+                    <label for="issue_heading" >Issue Heading: </label>
+                    <input required type="text" class="form-control" id="email" placeholder="Write your heading here" name="issue_h">
+                  </div>
+                  <div class="mb-3">
+                    <label for="issue_desc">Issue: </label>
+                    <!-- <input requried type="text" class="form-control" id="pwd" placeholder="Enter your issue" name="pswd"> -->
+                    <textarea required name="issue_text" class="form-control" id="itx" cols="30" rows="10"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Upload Supporting Documents:</label>
+                    <input class="form-control" type="file" id="formFile" name="upl_doc">
+                  </div>
+                  
+                <!-- </form> -->
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <!-- <div class="container mt-5" > -->
+                <h3>Submitter Detail</h3>
+            <div class="container mt-3 col-lg" >
+              <!-- <form action="#"> -->
+                <div class="mb-3 mt-3">
+                  <label for="issue_heading" >Name: </label>
+                  <input disabled type="text" class="form-control" id="email" placeholder="" name="name">
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="issue_heading" >Desigination: </label>
+                  <input disabled type="text" class="form-control" id="email" placeholder="" name="desg">
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="issue_heading" >E-mail: </label>
+                  <input disabled type="email" class="form-control" id="email" placeholder="" name="email">
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="issue_heading" >Phone: </label>
+                  <input disabled type="number" class="form-control" id="email" placeholder="" name="phone">
+                </div>
+                <div class="mb-3" >
+                  <button type="submit" class="btn btn-dark float-end " onclick="otp_up()">Submit</button>
+                </div>
+              </form>
+
+              <form action="" id="otp_div" style="display: none;" >
+                <div class="mb-3 mt-5" >
+                  <label for="OTP">Enter OTP</label>
+                  <input  class="form-control" type="password" name="otp" placeholder="Enter OTP here..." id="" size="10" >
+                </div>
+                <div class=" " >
+                  <button type="submit" class=" me-0 btn btn-primary">Verify</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>  
+      </div>
+
+      <footer>
+        <div class="container-fluid" >
+          <footer class="mt-5">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link1</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link2</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link3</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link4</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link5</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Thapar Institute of Engineering and Technology</p>
+          </footer>
+        </div>
+      </footer>
+
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" ></script>
+      <script>
+        function otp_up(){
+          var x = document.getElementById("otp_div");
+          var y = document.forms["issue_form"]["issue_h"].value;
+          var z = document.forms["issue_form"]["issue_b"].value;
+          if (y != ""){
+            x.style.display = "block";
+          }
+          var up = document.forms["issue_form"]["upl_doc"].value;
+          if (up == "") {
+            alert("No Files Uploaded"); 
+          }
+        }
+
+      </script>
+</body>
+</html>
