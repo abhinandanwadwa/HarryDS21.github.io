@@ -1,6 +1,6 @@
 # TITETIND
-TIET INDUSTRIES
-An Industry Project Powered By Thapar Institute of Engineering & Technology with collaboration with Punjab Govt.
+TIET INDUSTRY
+An Industry Project Powered By Thapar Institute of Engineering & Technology.
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@ An Industry Project Powered By Thapar Institute of Engineering & Technology with
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>ReadMe</title>
 </head>
 <body>
     <div class="container">
