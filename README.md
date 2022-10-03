@@ -17,6 +17,8 @@ An Industry Project Powered By Thapar Institute of Engineering & Technology.
         <h3><a href="Expert/dashboard.html">Expert Dashboard</a></h3>
         <h3><a href="Industry/sub_issue_indust.html">Indusrty Issue Page</a></h3>
         <h3><a href="Industry/registration.html">Indusrty Registration Page </a></h3>  
+        <h3><a href="Industry/Login Page.html">Indusrty Login Page </a></h3>  
+
     </div>
 </body>
 </html>
