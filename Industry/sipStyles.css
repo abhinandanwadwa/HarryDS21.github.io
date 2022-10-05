@@ -19,3 +19,8 @@
 #checkbox {
   margin-top: 6px;
 }
+
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+}
