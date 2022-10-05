@@ -1,0 +1,21 @@
+#title {
+  /* color: blue; */
+  font-size: 3rem;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Nunito', sans-serif;
+  background-color: white;
+  border-radius: 0.8rem;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#check-btn {
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+  font-size: 1.2rem
+}
+
+#checkbox {
+  margin-top: 6px;
+}
